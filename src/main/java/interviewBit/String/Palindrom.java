@@ -1,6 +1,6 @@
 package interviewBit.String;
 public class Palindrom {
-	public int isPalindrome(String A) {
+	public static int isPalindrome(String A) {
 		int size = A.length();
 		String lcs = A.toLowerCase();
 		int left = 0;
@@ -23,5 +23,8 @@ public class Palindrom {
 		}
 
 		return 1;
+	}
+	public static void main(String[] args) {
+		isPalindrome("race a car");
 	}
 }
