@@ -1,4 +1,4 @@
-package level1.getting_started;
+package pepcoding_level1.basic_programming.getting_started;
 
 import java.util.Scanner;
 
