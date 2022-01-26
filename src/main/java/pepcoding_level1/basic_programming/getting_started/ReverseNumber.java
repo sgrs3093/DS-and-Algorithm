@@ -12,6 +12,8 @@ import java.util.Scanner;
  * 3
  * 2
  * 1
+ *
+ * youtube : https://www.youtube.com/watch?v=D_yKIOnhMRc
  */
 public class ReverseNumber
 {
