@@ -6,6 +6,7 @@ public class IsPrime
 {
     public static void main (String[] args)
     {
+        System.out.println(sieveOfEratosthenes(10));
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
         for (int i = 0; i < t; i++) {
@@ -50,5 +51,44 @@ public class IsPrime
         else {
             System.out.println("Not Prime");
         }
+    }
+
+    /*
+          count prime   Sieve of Eratosthenes
+          Input n=10 ;
+          O/p : 4
+          there are 4 prime number less then 10 ;
+     */
+
+    static int sieveOfEratosthenes (int n)
+    {
+        if (n <= 2) { //checking 0 and 1
+            return 0;
+        }
+        //By default, all the composite is false
+        boolean[] composite = new boolean[n];
+
+        //as we need to go till root of n then finding the limit
+        int limit = (int)Math.sqrt(n);
+
+        //for each number we need to check if it is not prime then will make it true
+        //Array of composite --> where true represent not prime and False represent Prime
+        for (int i = 2; i <= limit; i++) {
+            if (composite[i] == false) {
+                //mark all the multiple of i is true
+                //the first index to be flipped to be true , is i*i
+                for (int j = i * i; j < n; j += i) {
+                    composite[j] = true;
+                }
+            }
+        }
+
+        int primeCount = 0;
+        for (int i = 2; i < n; i++) {
+            if (composite[i] == false) {
+                primeCount++;
+            }
+        }
+        return primeCount;
     }
 }
