@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * Prime Factorization Of A Number
  * 1. You are required to display the prime factorization of a number.
- *     2. Take as input a number n.
- *     3. Print all its prime factors from smallest to largest.
- *
- *     input : 1440
- *     output : 2 2 2 2 2 3 3 5
+ * 2. Take as input a number n.
+ * 3. Print all its prime factors from smallest to largest.
+ * <p>
+ * input : 1440
+ * output : 2 2 2 2 2 3 3 5
  */
 public class PrimeFactorization
 {
@@ -20,6 +20,20 @@ public class PrimeFactorization
         int n = scanner.nextInt();
         loopUptoRootN(n);
         for (int div = 2; div <= n; div++) {
+            /*
+             *we will be dividing the number from 2 and go until number become 0
+             * exp:
+             * 2|1440
+             * 2|720
+             * 2|360
+             * 2|180
+             * 2|90
+             * 3|45
+             * 3|15
+             * 5|5
+             *   1
+             * o/p: 2 2 2 2 2 3 3 5
+             */
             while (n % div == 0) {
                 n = n / div;
                 System.out.print(div + " ");
