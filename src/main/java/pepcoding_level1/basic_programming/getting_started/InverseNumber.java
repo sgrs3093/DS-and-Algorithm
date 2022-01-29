@@ -15,7 +15,7 @@ import java.util.Scanner;
  * 28346751 => op: 73425681
  * i/p : 21453 => 23154
  *
- * Youtube : https://www.youtube.com/watch?v=O7PlWc9lOzg
+ * YouTube : https://www.youtube.com/watch?v=O7PlWc9lOzg
  */
 public class InverseNumber
 {
