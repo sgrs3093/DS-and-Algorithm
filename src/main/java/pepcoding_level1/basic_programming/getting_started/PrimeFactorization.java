@@ -3,6 +3,7 @@ package pepcoding_level1.basic_programming.getting_started;
 import java.util.Scanner;
 
 /**
+ * YouTube : https://www.youtube.com/watch?v=5gFC-ayyQMk
  * Prime Factorization Of A Number
  * 1. You are required to display the prime factorization of a number.
  * 2. Take as input a number n.
