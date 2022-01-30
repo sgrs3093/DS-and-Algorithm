@@ -37,6 +37,8 @@ public class InverseNumber
 
         while (n != 0) {
 
+            //od - order digit
+            //op - order position
             int od = n % 10;
             /*
              21453
