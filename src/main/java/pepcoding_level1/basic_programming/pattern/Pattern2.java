@@ -3,16 +3,17 @@ package pepcoding_level1.basic_programming.pattern;
 import java.util.Scanner;
 
 /**
- * Pattern 1
- * *
+ * Pattern 2
+ * input : 5
+ * output :
+ * *	*	*	*	*
+ * *	*	*	*
+ * *	*	*
  * *	*
- * *    *   *
- * *	*   *   *
- * *	*   *   *   *
+ * *
  */
-public class Pattern1
+public class Pattern2
 {
-
     public static int getInput ()
     {
         Scanner scanner = new Scanner(System.in);
@@ -24,20 +25,12 @@ public class Pattern1
         printPattern();
     }
 
-    /**
-     * 5
-     * *
-     * *	*
-     * *	*	*
-     * *	*	*	*
-     * *	*	*	*	*
-     */
     static void printPattern ()
     {
         int n = getInput();
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= i; j++) {
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
                 System.out.print("\t");
             }
