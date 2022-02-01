@@ -30,8 +30,8 @@ public class IsPrime
     }
 
     /**
-     * for any no factor we need to check up to root of the N , and on that if any number will get devided
-     * then we need  not to check further , we can stop there and say factor has been happend and it is not prime
+     * for any number factor we need to check up to root of the N , and on that if any number will get divided
+     * then we need  not to check further , we can stop there and say factor has been happened and it is not prime
      * number
      *
      * @param n
@@ -57,7 +57,7 @@ public class IsPrime
           count prime   Sieve of Eratosthenes
           Input n=10 ;
           O/p : 4
-          there are 4 prime number less then 10 ;
+          there are 4 prime number less than 10 ;
      */
 
     static int sieveOfEratosthenes (int n)

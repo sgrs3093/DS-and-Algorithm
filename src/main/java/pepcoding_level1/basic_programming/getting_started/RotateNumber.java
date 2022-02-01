@@ -21,7 +21,7 @@ public class RotateNumber
         }
         //for maximum number like 550 time rotation
         k = k % digit;
-        //for nigative number
+        //for negative number
         if (k < 0) {
             k = k + digit;
         }
