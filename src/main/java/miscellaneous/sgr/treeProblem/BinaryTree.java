@@ -1,4 +1,4 @@
-package com.sgr.treeProblem;
+package miscellaneous.sgr.treeProblem;
 
 public class BinaryTree {
 	Node root;

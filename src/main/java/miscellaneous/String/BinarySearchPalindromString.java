@@ -1,4 +1,4 @@
-package interviewBit.String;
+package miscellaneous.String;
 
 public class BinarySearchPalindromString {
 	// Returns index of x if it is present in arr[],

@@ -1,4 +1,4 @@
-package com.sgr.insertionsort;
+package miscellaneous.sgr.insertionsort;
 
 public class InsertionSort {
 	public static void main(String[] args) {

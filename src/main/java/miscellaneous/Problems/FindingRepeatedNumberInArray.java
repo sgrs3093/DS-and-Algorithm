@@ -1,4 +1,4 @@
-package Problems;
+package miscellaneous.Problems;
 
 public class FindingRepeatedNumberInArray {
 	public static void main(String[] args) {

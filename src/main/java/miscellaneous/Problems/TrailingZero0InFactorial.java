@@ -1,4 +1,4 @@
-package factorial;
+package miscellaneous.Problems;
 
 public class TrailingZero0InFactorial {
 	/*

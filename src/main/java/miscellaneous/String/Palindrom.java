@@ -1,4 +1,4 @@
-package interviewBit.String;
+package miscellaneous.String;
 public class Palindrom {
 	public static int isPalindrome(String A) {
 		int size = A.length();

@@ -1,4 +1,4 @@
-package interviewBit.String;
+package miscellaneous.String;
 
 public class StringCharCount {
 	static void countNoOfOccurence(String s) {

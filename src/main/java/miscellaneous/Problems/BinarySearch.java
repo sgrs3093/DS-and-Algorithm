@@ -1,4 +1,4 @@
-package Problems;
+package miscellaneous.Problems;
 
 public class BinarySearch {
 	public static void main(String[] args) {

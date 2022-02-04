@@ -1,4 +1,4 @@
-package com.sgr.arrayProblems;
+package miscellaneous.sgr.arrayProblems;
 
 public class SortingZeroAndOnes {
 	static int count = 0;
