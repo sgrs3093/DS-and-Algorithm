@@ -42,13 +42,13 @@ public class Pattern5
         int space = n / 2;
         int star = 1;
         for (int i = 1; i <= n; i++) {
-           // System.out.println(space + "," + star);
+            // System.out.println(space + "," + star);
 
-            for(int sp=1;sp<=space;sp++ ) {
+            for (int sp = 1; sp <= space; sp++) {
                 System.out.print("\t");
             }
 
-            for(int str =1;str<=star;str++){
+            for (int str = 1; str <= star; str++) {
                 System.out.print("*\t");
             }
             if (i <= n / 2) {
