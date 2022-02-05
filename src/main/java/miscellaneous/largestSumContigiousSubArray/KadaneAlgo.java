@@ -1,9 +1,9 @@
-package array.largestSumContigiousSubArray;
+package miscellaneous.largestSumContigiousSubArray;
 
 /*
  * Kadanes algo for finding largest contiguous sub array
  * // Java program to print largest contiguous array sum
- * Kadane’s Algorithm:
+ * Kadaneï¿½s Algorithm:
 
 Initialize:
     max_so_far = 0

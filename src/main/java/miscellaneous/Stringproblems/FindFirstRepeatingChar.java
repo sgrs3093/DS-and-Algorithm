@@ -1,4 +1,4 @@
-package Stringproblems;
+package miscellaneous.Stringproblems;
 
 import java.util.HashSet;
 

@@ -36,7 +36,7 @@ public class DigitOfNumber
         //first get the total digit of the number
         while (temp != 0) {
             /*
-            //deciding number by 10 , will give total digit ,
+            //dividing number by 10 , will give total digit ,
              (every time will decide and the quotient will store in temp itself it will sort the number by 1 every time
              */
             temp = temp / 10;
@@ -61,7 +61,7 @@ public class DigitOfNumber
             /*
              754 => 754%100 ==> n = 54
              */
-            n = n % divisor; // sorting the number by one every time , by taking the reminder
+            n = n % divisor; // sorting the number by one every time , by taking the reminder (number ko chota kar denge )
             /*
             divisor ko chota kar denge
             100 se 10 ==> 10 => 1

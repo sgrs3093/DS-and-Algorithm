@@ -1,4 +1,4 @@
-package array.largestSumContigiousSubArray;
+package miscellaneous.largestSumContigiousSubArray;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

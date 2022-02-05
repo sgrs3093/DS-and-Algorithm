@@ -1,9 +1,9 @@
-package Problems;
+package miscellaneous.Problems;
 
 /*
  * Write an efficient program to find the sum of contiguous subarray within a one-dimensional array of numbers
  *  which has the largest sum.
- *  Kadane’s Algorithm:
+ *  Kadaneï¿½s Algorithm:
  *  
  *  Initialize :
  *  	max_so_far=0;
