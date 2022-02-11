@@ -3,7 +3,7 @@ package pepcoding_level1.basic_programming.pattern;
 import java.util.Scanner;
 
 /**
- * Pattern9 : Prinnting
+ * Pattern9 : Printing
  *
  * *				*
  * 	    *		*
