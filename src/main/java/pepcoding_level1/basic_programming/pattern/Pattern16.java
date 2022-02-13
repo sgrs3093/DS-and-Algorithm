@@ -72,7 +72,6 @@ public class Pattern16
                     System.out.print(j + "\t");
                 }
             }
-
             space -= 2;
             System.out.println();
         }
