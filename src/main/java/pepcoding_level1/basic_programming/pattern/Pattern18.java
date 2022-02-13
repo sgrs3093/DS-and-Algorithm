@@ -19,8 +19,29 @@ import java.util.Scanner;
  * <p>
  * *	*	*	*	*	*	*
  */
+
+/*
+7
+*	*	*	*	*	*	*
+	*	*	*	*	*
+		*	*	*
+			*
+		*	*	*
+	*	*	*	*	*
+*	*	*	*	*	*	*
+Enter the input number :
+7
+*	*	*	*	*	*	*
+	*				*
+		*		*
+			*
+		*	*	*
+	*	*	*	*	*
+*	*	*	*	*	*	*
+ */
 public class Pattern18
 {
+
 
     public static int getInput ()
     {
@@ -90,7 +111,7 @@ public class Pattern18
 
     private static void actualPrintPattern ()
     {
-        System.out.println("Enter the input number : ");
+        System.out.println("Enter the input number");
         int n = getInput();
         int space = 0;
         int star = n;
