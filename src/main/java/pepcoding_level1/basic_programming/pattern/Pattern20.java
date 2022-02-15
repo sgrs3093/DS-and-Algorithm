@@ -45,10 +45,12 @@ public class Pattern20
                 }//to print diagonal in 2nd half
                 else if (i > n / 2 && (i == j || i + j == n + 1)) {
                     System.out.print("*\t");
-                } else{
+                }
+                else {
                     System.out.print("\t");
                 }
-            } System.out.println();
+            }
+            System.out.println();
         }
     }
 
