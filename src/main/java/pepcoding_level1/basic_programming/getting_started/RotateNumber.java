@@ -12,7 +12,6 @@ public class RotateNumber
         int k = scanner.nextInt();//jitne se rotate karna hai
 
         //number of digit nikalna hai
-
         int temp = n;
         int digit = 0;
         while (temp != 0) {
@@ -25,16 +24,28 @@ public class RotateNumber
         if (k < 0) {
             k = k + digit;
         }
+        /*
+        here number is 1234
+        rotate karna hai 2 se then answer is 3412
+        n= 1234
+        k =2
+         */
         int div = 1;
         int multiplier = 1;
         for (int i = 1; i <= digit; i++) {
             if (i <=k) {
-                div = div * 10;
+                div = div * 10;//100
             }
             else {
-                multiplier = multiplier * 10;
+                multiplier = multiplier * 10;//10*10 =100
             }
         }
+        /*
+           1234/100 = > 1234 is actual number , 100 is divider
+           quotient = 12
+           reminder =34
+           rotateN= (34*100)+12 ==> 3400+12 ==> 3412 (final answer)
+         */
         int quotient = n / div;
         int reminder = n % div;
 
