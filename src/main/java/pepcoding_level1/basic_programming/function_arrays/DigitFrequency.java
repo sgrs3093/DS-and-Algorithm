@@ -85,4 +85,6 @@ public class DigitFrequency
 
         System.out.println("Total Digit frequency of the given digit is : " + digitFrequency);
     }
+
+
 }
