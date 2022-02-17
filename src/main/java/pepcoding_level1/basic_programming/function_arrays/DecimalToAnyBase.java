@@ -2,6 +2,14 @@ package pepcoding_level1.basic_programming.function_arrays;
 
 import java.util.Scanner;
 
+/**
+ * DecimalTOAnyBase
+ *Problem : https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/decimal_to_any_base/topic
+ * this class is mainly for number system
+ * converting decimal to octal
+ * converting decimal to binary
+ * Decimal to any base conversion
+ */
 public class DecimalToAnyBase
 {
 
@@ -13,7 +21,7 @@ public class DecimalToAnyBase
 
     public static void main (String[] args)
     {
-
+        decimalToAnyBase();
     }
 
     /**
@@ -23,8 +31,9 @@ public class DecimalToAnyBase
      */
     static void decimalToAnyBase ()
     {
-        int num = getInput();
+        int n = getInput();
         int base=getInput();
+        int num = n;
 
         /*
         we got the number and also base number to convert in which
@@ -48,18 +57,18 @@ public class DecimalToAnyBase
         (634) 10 ====> (1172) 8
          */
 
-        int reverse =0;
+        int reverse = 0;
         //will code now
         int power = 1; //10 the power of 0 is 1
-        while(num>0) {
+        while (num > 0) {
             int dig = num % base;
             //we got the first digit that umber will go to right most corner
             num = num / base;//number ko chota kar dege
-            reverse = dig * power;
+            reverse += dig * power;// REVERSE ME ADD KAR DENGE (WILL BE ADDING THE NUMBER IN REVERSE)
             //now next reminder will come to left , so will multiply with power with 10
             power = power * 10;
         }
-        System.out.println("Decimal to base final output is : ");
+        System.out.println("Decimal number " + n + " to base final output is : " + reverse);
 
     }
 }
