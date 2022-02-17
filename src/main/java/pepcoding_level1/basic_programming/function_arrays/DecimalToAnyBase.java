@@ -2,6 +2,14 @@ package pepcoding_level1.basic_programming.function_arrays;
 
 import java.util.Scanner;
 
+/**
+ * DecimalTOAnyBase
+ *Problem : https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/decimal_to_any_base/topic
+ * this class is mainly for number system
+ * converting decimal to octal
+ * converting decimal to binary
+ * Decimal to any base conversion
+ */
 public class DecimalToAnyBase
 {
 
