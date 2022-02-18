@@ -34,5 +34,14 @@ public class AnyBaseToDecimal
         System.out.println("Enter the number you want to convert");
         int num = getInput();
         System.out.println("Enter the base in which you want to convert");
+        int base = getInput();
+        //In this problem, we get a number 'n' and it's base 'b', and we are required to convert the number "n" into a decimal number.
+
+        while(num > 0) {
+
+            int dig = num%10;
+            num = num/10;
+        }
+
     }
 }
