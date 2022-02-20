@@ -15,4 +15,8 @@ public class AnyBaseTOAnyBase
     {
 
     }
+
+    public static void anybaseToanybase(){
+        int n =getInput();
+    }
 }
