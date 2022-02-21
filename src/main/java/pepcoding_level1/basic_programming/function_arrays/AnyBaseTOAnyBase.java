@@ -45,18 +45,22 @@ public class AnyBaseTOAnyBase
         int n = getInput();
         int givenBase = getInput();
         int destBase = getInput();
-        int dec =getValueInDecimal(n,givenBase);
-        getValueInBase(dec,destBase);
+        int dec = getValueInDecimal(n,
+                                    givenBase);
+        int base = getValueInBase(dec,
+                                  destBase);
+        System.out.println(base);
     }
 
-    static int getValueInDecimal (int n, int base)
+    static int getValueInDecimal (int n,
+                                  int base)
     {
         // we will convert number to decimal
         //to convert the number to decimal we will divide the number by 10 and will take all the reminder
 
         int rev = 0;
         int pow = 1;
-        while(n>0){
+        while (n > 0) {
             /*
             1234%10
             10|1234
@@ -67,20 +71,29 @@ public class AnyBaseTOAnyBase
 
              4 3 2 1  ==> 1 2 3 4
              */
-            int dig = n%10;
-            n = n/10;
-            rev+=dig * pow;
-            pow = pow * 10 ;
+            int dig = n % 10;
+            n = n / 10;
+            rev += dig * pow;
+            pow = pow * base;
 
         }
         return rev;
 
-
     }
 
-    static void getValueInBase (int n, int dest)
+    static int getValueInBase (int n,
+                               int dest)
     {
+        int rev = 0;
+        int pow = 1;
+        while (n > 0) {
 
+            int dig = n % dest;
+            n = n / dest;
+            rev += dig * pow;
+            pow = pow * 10;
+        }
+        return rev;
 
     }
 }
