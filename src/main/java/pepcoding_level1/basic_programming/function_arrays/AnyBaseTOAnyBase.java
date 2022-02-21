@@ -31,7 +31,7 @@ public class AnyBaseTOAnyBase
 
     public static void main (String[] args)
     {
-
+        anybaseToanybase();
     }
 
     /**

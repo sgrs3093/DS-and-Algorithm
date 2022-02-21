@@ -8,9 +8,11 @@ public class RotateNumber
     public static void main (String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number that you want to rotate :");
         int n = scanner.nextInt();//jisko rotate karna hai
+        System.out.println("Enter the number of times that you want to rotate ::");
         int k = scanner.nextInt();//jitne se rotate karna hai
-
+        System.out.println("rotation of given number :" + n);
         //number of digit nikalna hai
         int temp = n;
         int digit = 0;
@@ -33,7 +35,7 @@ public class RotateNumber
         int div = 1;
         int multiplier = 1;
         for (int i = 1; i <= digit; i++) {
-            if (i <=k) {
+            if (i <= k) {
                 div = div * 10;//100
             }
             else {
@@ -46,10 +48,12 @@ public class RotateNumber
            reminder =34
            rotateN= (34*100)+12 ==> 3400+12 ==> 3412 (final answer)
          */
-        int quotient = n / div;
-        int reminder = n % div;
+        int quotient = n / div;// 1234/100 =>12
+        int reminder = n % div;// 1234%100 =>34
 
-        int rotateN = reminder * multiplier + quotient;
-        System.out.println(rotateN);
+        int rotateN = reminder * multiplier + quotient; // 34 * 100 =>3400 + 12 => 3412 final answer
+
+        System.out.println("After rotation number is : " + rotateN);
+
     }
 }
