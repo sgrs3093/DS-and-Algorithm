@@ -32,12 +32,12 @@ public class DecimalToAnyBase
     static void decimalToAnyBase ()
     {
         int n = getInput();
-        int base=getInput();
+        int base = getInput();
         int num = n;
 
         /*
         we got the number and also base number to convert in which
-        so we know the rule that base number will devide the number
+        so we know the rule that base number will divide the number
         until number become 0
         then each reminder will be will added from right side
         ex-
@@ -62,7 +62,7 @@ public class DecimalToAnyBase
         int power = 1; //10 the power of 0 is 1
         while (num > 0) {
             int dig = num % base;
-            //we got the first digit that umber will go to right most corner
+            //we got the first digit that number will go to right most corner
             num = num / base;//number ko chota kar dege
             reverse += dig * power;// REVERSE ME ADD KAR DENGE (WILL BE ADDING THE NUMBER IN REVERSE)
             //now next reminder will come to left , so will multiply with power with 10

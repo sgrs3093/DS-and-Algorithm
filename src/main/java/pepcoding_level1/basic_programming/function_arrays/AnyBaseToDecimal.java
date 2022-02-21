@@ -49,7 +49,7 @@ public class AnyBaseToDecimal
         10|1172
         10|117|2 reminder => 2*8 of 0
         10|11|7 reminder => 7*8 of 1
-        10|1|1 reminder => 1*8 of 2
+        10|1|1 reminder => 1*8 of 2 ( 8 ka power 2 se multiply karenge )
         10|0|1 reminder => 1*8 of 3
 
        amd will add the number
