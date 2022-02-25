@@ -39,7 +39,7 @@ public class SpanOfArray
 
     public static void main (String[] args)
     {
-
+        int n =getInput();
     }
 
 
