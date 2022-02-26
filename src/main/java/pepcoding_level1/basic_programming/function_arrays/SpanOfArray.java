@@ -64,9 +64,15 @@ public class SpanOfArray
             if (arr[i] < min) {
                 min = arr[i];
             }
+            //finding max
+            if (arr[i] > max) {
+                max = arr[i];
+            }
         }
-        System.out.println(min);
-
+        System.out.println(min + ":min and max:" + max);
+        //now as we found out the max and min then we will find the difference or SPAN between them
+        int diff = max - min;
+        System.out.println("difference or span between max and min is : " + diff);
     }
 
 }
