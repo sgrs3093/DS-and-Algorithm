@@ -40,12 +40,29 @@ public class BarChart
 
     static void barChart ()
     {
-
         int n = getInput();
         //taking input
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++) {
             arr[i] = getInput();
+        }
+        /*
+        here we need to print bar chart
+        we have given the number like
+        3
+        2
+        4
+        so in each column we need to print that many *
+                *
+        *       *
+        *   *   *
+        *   *   *
+        */
+        for(int  i =0;i<n;i++) {
+            int val = arr[i];
+            for (int j = 0; j < val; j++) {
+                System.out.println("*");
+            }
         }
 
     }
