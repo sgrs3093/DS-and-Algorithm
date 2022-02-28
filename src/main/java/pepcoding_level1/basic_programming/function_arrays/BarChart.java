@@ -58,11 +58,42 @@ public class BarChart
         *   *   *
         *   *   *
         */
-        for(int  i =0;i<n;i++) {
-            int val = arr[i];
-            for (int j = 0; j < val; j++) {
-                System.out.println("*");
+
+        //now first we need to find out max height of the building
+        int max = arr[0];
+        for(int i =0;i<n;i++) {
+            if(arr[i]>max){
+                max=arr[i];
             }
+        }
+        //now as we got the highest floor of the building now we need to run the loop for each floor
+
+        /*
+
+        5 -
+        input
+        3
+        1
+        5
+        0
+        4
+                *
+         		*
+         *		*		*
+         *		*		*
+         *	*	*		*
+         */
+        for (int floor = max; floor >= 1; floor--) {
+            //now for each floor we need to run the array and if the floor is same or grater then then we will print * else air
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] >= floor) {
+                    System.out.print("*\t");
+                }
+                else {
+                    System.out.print("\t");
+                }
+            }
+            System.out.println();
         }
 
     }
