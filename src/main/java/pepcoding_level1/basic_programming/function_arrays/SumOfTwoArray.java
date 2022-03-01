@@ -80,18 +80,39 @@ public class SumOfTwoArray
         int len2 = arr2.length - 1;
         //now we need to add both array
         int carry = 0;
-        int k = 0;
-        int i = 0;
-        int j = 0;
+        int k = arr3.length-1;
+        int i = len1;
+        int j = len2;
 
-        while (j >= 0 && i >= 0) {
+        /*
+        234
+        234
+        ---
+        468
+         */
+        while (j >= 0 || i >= 0) {
+            int d=carry;
             int a1 = arr1[i];
             int a2 = arr2[j];
-            int num = carry + a1 + a2;
-            carry = num / 10;
-            int val = num % 10;
-            arr3[k] = val;
-            k++;
+            if(i>=0) {
+                d=d+a1;
+            }
+            if(j>=0) {
+                d=d+a2;
+            }
+            carry = d / 10;
+            d = d % 10;
+            arr3[k] = d;
+            k--;
+            i--;
+            j--;
+        }
+        if(carry>0){
+            System.out.println(carry);
+        }
+        for (int v: arr3
+             ) {
+            System.out.println(v);
         }
 
     }
