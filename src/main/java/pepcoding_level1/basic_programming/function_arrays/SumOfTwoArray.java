@@ -74,13 +74,13 @@ public class SumOfTwoArray
             arr3 = new int[n];
         }
         else {
-             arr3 = new int[n2];
+            arr3 = new int[n2];
         }
-         int len1 = arr1.length - 1;
+        int len1 = arr1.length - 1;
         int len2 = arr2.length - 1;
         //now we need to add both array
         int carry = 0;
-        int k = arr3.length-1;
+        int k = arr3.length - 1;
         int i = len1;
         int j = len2;
 
@@ -91,14 +91,14 @@ public class SumOfTwoArray
         468
          */
         while (j >= 0 || i >= 0) {
-            int d=carry;
+            int d = carry;
             int a1 = arr1[i];
             int a2 = arr2[j];
-            if(i>=0) {
-                d=d+a1;
+            if (i >= 0) {
+                d = d + a1;
             }
-            if(j>=0) {
-                d=d+a2;
+            if (j >= 0) {
+                d = d + a2;
             }
             carry = d / 10;
             d = d % 10;
@@ -107,11 +107,10 @@ public class SumOfTwoArray
             i--;
             j--;
         }
-        if(carry>0){
+        if (carry > 0) {
             System.out.println(carry);
         }
-        for (int v: arr3
-             ) {
+        for (int v : arr3) {
             System.out.println(v);
         }
 
