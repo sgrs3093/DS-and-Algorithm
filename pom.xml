@@ -3,6 +3,18 @@
   <groupId>DS-and-Algorithm</groupId>
   <artifactId>DS-and-Algorithm</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>DS-and-Algorithm</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>DS-and-Algorithm</name>
   <description>Adding the code for DS and algo</description>
 </project>
