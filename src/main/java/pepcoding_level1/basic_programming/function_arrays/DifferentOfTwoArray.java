@@ -93,13 +93,14 @@ public class DifferentOfTwoArray
              */
             int d = 0;
 
-            int aval = i > 0 ? arr1[i] : 0;
+            int aval = i >= 0 ? arr1[i] : 0;
+
             if (arr2[j] + carry >= aval) {
-                d = arr2[j] - aval;
+                d = arr2[j]+ carry - aval;
                 carry = 0;
             }
             else {
-                d = (arr2[j] + 10) - aval;
+                d = (arr2[j]+carry + 10) - aval;
                 carry = -1;
             }
             sub[k] = d;
@@ -108,6 +109,18 @@ public class DifferentOfTwoArray
             j--;
         }
 
+        //this loop is for skipping the front 0's
+        /*
+        supoose
+        1 0 0 0
+          9 9 9
+        -------
+         0 0 0  1
+         so here we are skipping the 0's as its not necessary to print 0 while printing the number
+         below P is the pointer that is pointing to subtraction array index and p is incrementing/skipping 1 index is the value
+         is 0 and once 0 is finished then its break the loop and
+         in second loop it start from where it stopped
+         */
         int p = 0;
         while (p < sub.length) {
             if (sub[p] == 0) {
@@ -120,6 +133,7 @@ public class DifferentOfTwoArray
 
         while (p < sub.length) {
             System.out.println(sub[p]);
+            p++;
         }
 
     }
