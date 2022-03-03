@@ -51,5 +51,62 @@ public class DifferentOfTwoArray
     static void differentOFTwoArray ()
     {
 
+        //taking input
+        int n1 = getInput();
+        int[] arr1 = new int[n1];
+        for (int i = 0; i < n1; i++) {
+            arr1[i] = getInput();
+        }
+        int n2 = getInput();
+        int[] arr2 = new int[n2];
+        for (int i = 0; i < n2; i++) {
+            arr2[i] = getInput();
+        }
+        //now we need to write the logic for substraction
+        int[] sub=new int[n2];//n2 will be bigger then n1 as sub=n2-n1;
+
+        //as substraction will start from left most side then will take indexes from length-1 for both the number
+        int i = arr1.length-1;
+        int j = arr2.length-1;
+        int k = sub.length-1;
+        int carry = 0;
+        while (k >= 0) {
+            /*
+             1000
+             -  1
+             ----
+              999
+              -1
+              111
+               99
+              ---
+               12
+              123
+              - 1
+              ----
+              122
+
+              111
+                1
+             -----
+              110
+             */
+            int d = 0 ;
+
+            if (arr2[j] + carry >= arr1[i]) {
+                d = arr2[j] - arr1[i];
+                carry = 0;
+            } else {
+                d = (arr2[j] + 10) - arr1[i];
+                carry = -1;
+            }
+            sub[k] = d;
+            k--;
+            i--;
+            j--;
+        }
+
+
+
     }
 }
