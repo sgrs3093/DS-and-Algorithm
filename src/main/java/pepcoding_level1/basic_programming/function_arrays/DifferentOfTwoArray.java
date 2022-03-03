@@ -63,12 +63,12 @@ public class DifferentOfTwoArray
             arr2[i] = getInput();
         }
         //now we need to write the logic for substraction
-        int[] sub=new int[n2];//n2 will be bigger then n1 as sub=n2-n1;
+        int[] sub = new int[n2];//n2 will be bigger then n1 as sub=n2-n1;
 
         //as substraction will start from left most side then will take indexes from length-1 for both the number
-        int i = arr1.length-1;
-        int j = arr2.length-1;
-        int k = sub.length-1;
+        int i = arr1.length - 1;
+        int j = arr2.length - 1;
+        int k = sub.length - 1;
         int carry = 0;
         while (k >= 0) {
             /*
@@ -91,13 +91,15 @@ public class DifferentOfTwoArray
              -----
               110
              */
-            int d = 0 ;
+            int d = 0;
 
-            if (arr2[j] + carry >= arr1[i]) {
-                d = arr2[j] - arr1[i];
+            int aval = i > 0 ? arr1[i] : 0;
+            if (arr2[j] + carry >= aval) {
+                d = arr2[j] - aval;
                 carry = 0;
-            } else {
-                d = (arr2[j] + 10) - arr1[i];
+            }
+            else {
+                d = (arr2[j] + 10) - aval;
                 carry = -1;
             }
             sub[k] = d;
@@ -106,7 +108,19 @@ public class DifferentOfTwoArray
             j--;
         }
 
+        int p = 0;
+        while (p < sub.length) {
+            if (sub[p] == 0) {
+                p++;
+            }
+            else {
+                break;
+            }
+        }
 
+        while (p < sub.length) {
+            System.out.println(sub[p]);
+        }
 
     }
 }
