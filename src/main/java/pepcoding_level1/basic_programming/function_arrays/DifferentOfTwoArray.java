@@ -96,11 +96,11 @@ public class DifferentOfTwoArray
             int aval = i >= 0 ? arr1[i] : 0;
 
             if (arr2[j] + carry >= aval) {
-                d = arr2[j]+ carry - aval;
+                d = arr2[j] + carry - aval;
                 carry = 0;
             }
             else {
-                d = (arr2[j]+carry + 10) - aval;
+                d = (arr2[j] + carry + 10) - aval;
                 carry = -1;
             }
             sub[k] = d;
