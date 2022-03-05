@@ -62,8 +62,8 @@ public class BarChart
         //now first we need to find out max height of the building
         int max = arr[0];
         for(int i =0;i<n;i++) {
-            if(arr[i]>max){
-                max=arr[i];
+            if (arr[i] > max) {
+                max = arr[i];
             }
         }
         //now as we got the highest floor of the building now we need to run the loop for each floor
