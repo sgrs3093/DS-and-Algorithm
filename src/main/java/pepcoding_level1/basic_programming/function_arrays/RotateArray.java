@@ -25,6 +25,12 @@ public class RotateArray
         display(a);
     }
 
+    /**
+     * For reverse the array
+     * @param a
+     * @param i
+     * @param j
+     */
     private static void reverse (int a[],
                                  int i,
                                  int j)
@@ -41,6 +47,10 @@ public class RotateArray
 
     }
 
+    /**
+     * To display
+     * @param a
+     */
     private static void display (int a[])
     {
 
@@ -49,6 +59,11 @@ public class RotateArray
         }
     }
 
+    /**
+     * to rotate the array
+     * @param a
+     * @param k
+     */
     private static void rotate (int a[],int k)
     {
         //part 1
