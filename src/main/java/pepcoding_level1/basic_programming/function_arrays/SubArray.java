@@ -56,6 +56,13 @@ public class SubArray
         for (int i = 0; i < arr.length; i++) {
             arr[i] = getInput();
         }
+        /*
+        3 loop total will be there
+        i loop is for travel
+        j is also for travel
+        k loop is for printing the value from i to j
+        k loop is for traveling between i to j to print the value
+         */
 
         //now we need to print the value
         /*
