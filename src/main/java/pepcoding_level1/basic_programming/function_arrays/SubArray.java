@@ -67,7 +67,7 @@ public class SubArray
         //now we need to print the value
         /*
         here we will use two pointer technique
-        initially i and j both wiil be at same pointer and second iteration
+        initially i and j both will be at same pointer and second iteration
         j will move to next index and k will print the value till the J
         and once all the value will be printed then i will move to next pointer
         and j again will point to same position with i and j will then go till the last index to print all sub array till then
