@@ -101,13 +101,13 @@ or we say every 7 time the number will be same
      */
     private static void rotate (int a[],int k)
     {
-        //part 1
+        //part 1 reverse the first part of the array till the 0 index to array length-k
         reverse(a,0,a.length-k-1);
 
-        //part 2
+        //part 2 revere the second part of the array i.e array length-k to till last index i.e array.length
         reverse(a,a.length-k,a.length-1);
 
-        //all
+        //all reverse the whole array
         reverse(a,0,a.length-1);
 
     }
