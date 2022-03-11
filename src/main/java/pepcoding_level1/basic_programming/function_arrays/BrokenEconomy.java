@@ -36,5 +36,33 @@ public class BrokenEconomy
             arr[i] = Integer.parseInt(bf.readLine());
         }
 
+        int d = Integer.parseInt(bf.readLine());
+
+        findCeilFloorForGivenNumber(arr,
+                                    n,
+                                    d);
+    }
+
+    /**
+     * Here one sorted array will be given
+     * arr = 10, 20 30 40 50 60 70 80 90 100
+     * Example d = 55
+     * so we need to find floor and ciel for 55 in given array
+     * floor is just smaller than given number so 50 is floor
+     * ciel is just bigger then given number so 60 is ciel for 55
+     * floor = 50
+     * ciel = 60
+     *
+     * Example d =92
+     * floor : 90
+     * ciel : 100
+     * @param arr
+     * @param n
+     */
+    private static void findCeilFloorForGivenNumber (int[] arr,
+                                                     int n,
+                                                     int d)
+    {
+
     }
 }
