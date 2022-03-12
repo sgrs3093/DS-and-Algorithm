@@ -56,6 +56,9 @@ public class BrokenEconomy
      * Example d =92
      * floor : 90
      * ciel : 100
+     *
+     * here 90 is just smaller than 92
+     * and 100 is just bigger than 92
      * @param arr
      * @param n
      */
