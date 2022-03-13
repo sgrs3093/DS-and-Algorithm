@@ -52,13 +52,14 @@ public class BrokenEconomy
      * ciel is just bigger then given number so 60 is ciel for 55
      * floor = 50
      * ciel = 60
-     *
+     * <p>
      * Example d =92
      * floor : 90
      * ciel : 100
-     *
+     * <p>
      * here 90 is just smaller than 92
      * and 100 is just bigger than 92
+     *
      * @param arr
      * @param n
      */
@@ -66,6 +67,30 @@ public class BrokenEconomy
                                                      int n,
                                                      int d)
     {
+        int floor = 0;
+        int ceil = 0;
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (d < arr[mid]) {
+                high = mid - 1;
+                ceil = arr[mid];
+            }
+            else if (d > arr[mid]) {
+                low = mid + 1;
+                floor = arr[mid];
+            }
+            else {
+                // if data is equal then floor and ceil both is equal to mid
+                floor = arr[mid];
+                ceil = arr[mid];
+                break;
+            }
+        }
+        System.out.println("for data : " + d + " floor and ceil is given below ");
+        System.out.println("floor : " + floor);
+        System.out.println("ceil : " + ceil);
 
     }
 }
