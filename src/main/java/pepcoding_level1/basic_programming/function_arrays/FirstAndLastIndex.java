@@ -59,13 +59,55 @@ public class FirstAndLastIndex
         for (int i = 0; i < n; i++) {
             a[i] = Integer.parseInt(br.readLine());
         }
+        int d = Integer.parseInt(br.readLine());
+        firstIndex(a,d);
+        lastIndex(a,d);
     }
 
-    public static void firstIndex() {
+    public static void firstIndex (int arr[],
+                                   int d)
+    {
 
+        int low = 0;
+        int high = arr.length - 1;
+        int firstIndex = 0;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (d < arr[mid]) {
+                high = mid - 1;
+            }
+            else if (d > arr[mid]) {
+                low = mid + 1;
+            }
+            else {
+                firstIndex = mid;
+                high = mid - 1;
+            }
+        }
+        System.out.println("First Index: " + firstIndex);
     }
 
-    public static void lastIndex() {
+    public static void lastIndex (int arr[],
+                                  int d)
+    {
+        int low = 0;
+        int high = arr.length - 1;
+        int lastIndex = 0;
 
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (d < arr[mid]) {
+                high = mid - 1;
+            }
+            else if (d > arr[mid]) {
+                low = mid + 1;
+            }
+            else {
+                lastIndex = mid;
+                low = mid + 1;
+            }
+        }
+        System.out.println("Last Index: " + lastIndex);
     }
 }
