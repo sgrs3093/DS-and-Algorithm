@@ -60,4 +60,12 @@ public class FirstAndLastIndex
             a[i] = Integer.parseInt(br.readLine());
         }
     }
+
+    public static void firstIndex() {
+
+    }
+
+    public static void lastIndex() {
+
+    }
 }
