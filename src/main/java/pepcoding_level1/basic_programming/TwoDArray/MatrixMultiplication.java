@@ -91,13 +91,12 @@ public class MatrixMultiplication
             }
         }
 
-        //we need to print now
+        //we need to print the product
         for (int i = 0; i < product.length; i++) {
             for (int j = 0; j < product[0].length; j++) {
-                for (int k = 0; k < c1; k++) {//now we need to fill
-                    product[i][j] += one[i][k] * two[k][j];
-                }
+                System.out.println(product[i][j] + " ");
             }
+            System.out.println();
         }
 
     }
