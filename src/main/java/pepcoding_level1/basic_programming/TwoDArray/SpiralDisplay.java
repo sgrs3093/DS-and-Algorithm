@@ -30,8 +30,8 @@ public class SpiralDisplay
         int minc = 0;
         int maxc = arr[0].length - 1;
 
-        int totalElements =n*m;
-        int count =0;
+        int totalElements = n * m;
+        int count = 0;
         while (count < totalElements) {
             // this matrix we will print rectange wise until all the number get printed
             // we will have four wall
@@ -41,27 +41,30 @@ public class SpiralDisplay
                 System.out.println(arr[i][j]);
                 count++;
             }
-            minc ++;
+            minc++;
 
             //2 bottom wall, here column wil get incremented and row will be same
             for (int j = minc, i = maxr; j <= maxc && count < totalElements; j++) {
-                System.out.println(arr[i][j]);count++;
+                System.out.println(arr[i][j]);
+                count++;
             }
-            maxr --;
+            maxr--;
 
             //3 right wall, in this wall will be printing right most column , from down to up
             //here column will be same and row will get change
             for (int i = maxr, j = maxc; i >= minr && count < totalElements; i--) {
-                System.out.println(arr[i][j]);count++;
+                System.out.println(arr[i][j]);
+                count++;
             }
-            maxc --;
+            maxc--;
 
             //4 upper wall
             //here row will be same and line will be comming from right most column to left column
             for (int j = maxc, i = minr; j >= minc && count < totalElements; j--) {
-                System.out.println(arr[i][j]);count++;
+                System.out.println(arr[i][j]);
+                count++;
             }
-            minr ++;
+            minr++;
         }
 
     }
