@@ -26,6 +26,7 @@ public class ExitPointOfMatrix
         int i = 0;
         int j = 0;
         int dir = 0; //East=0, south=1, west=2, north = 3
+        //in this matrix will be taking as direction wise solution
         //now we need to solve the problem
         while (true) {
             dir = (dir + arr[i][j]) % 4; //To Keep the values between 0 and 3
