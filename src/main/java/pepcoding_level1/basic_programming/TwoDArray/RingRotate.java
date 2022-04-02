@@ -63,6 +63,12 @@ public class RingRotate
     private static void rotateOneDArray (int[] arr,
                                          int rotate)
     {
+
+        //handling edge case and negative case
+        rotate = rotate % arr.length;
+        if (rotate < 0) {
+            rotate = rotate + arr.length;
+        }
         // we need to write the code for rotate 1 d array
         // array will be given and number of time we need to rotate will be given
         /*
@@ -103,8 +109,9 @@ public class RingRotate
                                       int i,
                                       int j)
     {
-        int li = i;
-        int ri = j;
+        int li = i; //left index
+        int ri = j;//right index
+        // we will swap the element to reverse the array till left index is less then right index
         while (li < ri) {
             int temp = arr[i];
             arr[i] = arr[j];
