@@ -124,6 +124,11 @@ public class RingRotate
     private static int[] fillOneDArrayFromShell (int[][] arr,
                                                  int shell)
     {
+
+        int minr = shell - 1;
+        int minc = shell - 1;
+        int maxr = arr.length - shell;
+        int maxc = arr[0].length - shell;
         return null;
     }
 }
