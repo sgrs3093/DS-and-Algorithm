@@ -36,6 +36,12 @@ public class RingRotate
 
     private static void display (int[][] arr)
     {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     private static void rotateShell (int[][] arr,
@@ -54,11 +60,86 @@ public class RingRotate
                           oneDArray);
     }
 
+
+    private static int[] fillOneDArrayFromShell (int[][] arr,
+                                                 int shell)
+    {
+
+        int minr = shell - 1;
+        int minc = shell - 1;
+        int maxr = arr.length - shell;
+        int maxc = arr[0].length - shell;
+        //int size = lw + bw + rw +tw -4; we are subtracting 4 beacasue each corner will be coming 2 times , so each corner number will become
+        //duplicate , then we need to remove 1 duplicate number from each corner , total 4 element we need to remove from the one d array size.
+        /*
+        left wall = minr to max row
+
+         */
+        int size = 2 * (maxr - minr + maxc - minc);
+        //now we got the total size then we can declare the one d array
+        int[] oneD = new int[size];
+
+        // now we need to go leftwall, bottom wall , right wall , top wall
+        //left wall
+        int idx = 0;
+        for (int i = minr, j = minc; i <= maxr; i++) {
+            oneD[idx] = arr[i][j];
+            idx++;
+        }
+
+        //bottom wall
+        for (int i = maxr, j = minc + 1; j <= maxc; j++) {
+            oneD[idx] = arr[i][j];
+            idx++;
+        }
+        //right wall
+        for (int i = maxr - 1, j = maxc; i >= minr; i--) {
+            oneD[idx] = arr[i][j];
+            idx++;
+        }
+        //top wall
+        for (int i = maxr, j = maxc - 1; j >= minc + 1; j--) {
+            oneD[idx] = arr[i][j];
+            idx++;
+        }
+        return oneD;
+    }
+
     private static void fillShellFromOneD (int[][] arr,
                                            int shell,
-                                           int[] oneDArray)
+                                           int[] oneD)
     {
+
+        int minr = shell - 1;
+        int minc = shell - 1;
+        int maxr = arr.length - shell;
+        int maxc = arr[0].length - shell;
+
+        // now we need to go leftwall, bottom wall , right wall , top wall
+        //left wall
+        int idx = 0;
+        for (int i = minr, j = minc; i <= maxr; i++) {
+            arr[i][j] = oneD[idx];
+            idx++;
+        }
+
+        //bottom wall
+        for (int i = maxr, j = minc + 1; j <= maxc; j++) {
+            arr[i][j] = oneD[idx];
+            idx++;
+        }
+        //right wall
+        for (int i = maxr - 1, j = maxc; i >= minr; i--) {
+            arr[i][j] = oneD[idx];
+            idx++;
+        }
+        //top wall
+        for (int i = maxr, j = maxc - 1; j >= minc + 1; j--) {
+            arr[i][j] = oneD[idx];
+            idx++;
+        }
     }
+
 
     private static void rotateOneDArray (int[] arr,
                                          int rotate)
@@ -119,16 +200,5 @@ public class RingRotate
             i++;
             j--;
         }
-    }
-
-    private static int[] fillOneDArrayFromShell (int[][] arr,
-                                                 int shell)
-    {
-
-        int minr = shell - 1;
-        int minc = shell - 1;
-        int maxr = arr.length - shell;
-        int maxc = arr[0].length - shell;
-        return null;
     }
 }
