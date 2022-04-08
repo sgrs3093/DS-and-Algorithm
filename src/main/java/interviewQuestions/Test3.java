@@ -23,6 +23,11 @@ public class Test3
         }
     }*/
 
+    interface I
+    {
+        void m1 ();
+    }
+
     public abstract class AbstractClass
     {
         public AbstractClass ()

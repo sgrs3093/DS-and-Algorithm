@@ -14,3 +14,7 @@
 ------
 Spring boot questions--
 ----------
+
+Abstract class can not have the constructor -
+Class can not contain abstract class
+class loader
