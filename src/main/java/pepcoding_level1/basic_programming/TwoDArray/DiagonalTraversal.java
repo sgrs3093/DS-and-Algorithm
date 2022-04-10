@@ -26,6 +26,7 @@ public class DiagonalTraversal
                 arr[i][j] = sc.nextInt();
             }
         }
+        print2DArrayInDiagonalTraversal(arr);
 
     }
 
@@ -55,8 +56,8 @@ public class DiagonalTraversal
          */
 
         for (int gap = 0; gap < arr.length; gap++) {
-            for (int i = 0, j = 0; j <= arr[0].length; i++, j++) {
-                System.out.print(arr[i][j]);
+            for (int i = 0, j = gap; j < arr[0].length; i++, j++) {
+                System.out.print(arr[i][j]+" ");
             }
             System.out.println();
         }
