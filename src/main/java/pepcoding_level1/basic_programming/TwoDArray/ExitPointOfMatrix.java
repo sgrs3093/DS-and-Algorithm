@@ -44,7 +44,7 @@ public class ExitPointOfMatrix
             }
 
             if (i < 0) {
-                i++; //exit point is one row ahead so making i++ so inplace of -1 it will be 0
+                i++; //exit point is one row ahead so making i++ so in place of -1 it will be 0
                 break;
             }
             if (j < 0) {
