@@ -34,5 +34,20 @@ public class StringIntro
         s3.charAt(0);//to find the character inn String
         //sub string in String
         String subString = "abcd";//0,1,2,3 total 4 character
+        printAllSubstringOfABCD();
+    }
+
+    //we will print all the substring of abcd
+    static void printAllSubstringOfABCD ()
+    {
+        String sub = "abcd";
+
+        //this will print all the substring
+        for (int i = 0; i < sub.length(); i++) {
+            for (int j = i + 1; j <= sub.length(); j++) {
+                System.out.println(sub.substring(i,
+                                                 j));
+            }
+        }
     }
 }
