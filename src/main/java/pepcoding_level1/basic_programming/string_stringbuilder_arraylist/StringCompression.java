@@ -12,4 +12,5 @@ package pepcoding_level1.basic_programming.string_stringbuilder_arraylist;
  */
 public class StringCompression
 {
+
 }
