@@ -50,8 +50,16 @@ public class StringCompression
 
     }
 
+    /**
+     * Input : aaabbbccdeeee
+     * Output : a3b3c2d1e4
+     * @param value
+     */
     static void secondCompression (String value)
     {
+        /*
+
+         */
 
     }
 }
