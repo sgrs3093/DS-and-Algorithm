@@ -22,8 +22,20 @@ public class StringCompression
         secondCompression(value);
     }
 
+    /**
+     *
+     * Basically we need to print single character for each string , if the next string is same the we
+     *
+     * @param value =  wwwwaaadexxxxxx
+     * output : wadex
+     *
+     */
     static void firstCompression (String value)
     {
+        // will take the input
+        /*
+        i
+         */
 
     }
 
