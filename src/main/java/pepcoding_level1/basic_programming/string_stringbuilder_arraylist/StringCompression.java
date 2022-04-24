@@ -36,17 +36,30 @@ public class StringCompression
          each time will take the next character and compare with previous character
         if they are same we will not add to answer else we will add
          */
-        char fc = value.charAt(0);
+        String ans = String.valueOf(value.charAt(0));
 
-        for (int i= 1 ;i<value.length(); i++) {
+        for (int i = 1; i < value.length(); i++) {
             char presentChar = value.charAt(i);
-            char previousChar= value.charAt(i-1);
+            char previousChar = value.charAt(i - 1);
+
+            if (presentChar != previousChar) {
+                ans += String.valueOf(presentChar);
+            }
         }
+        System.out.println(ans);
 
     }
 
+    /**
+     * Input : aaabbbccdeeee
+     * Output : a3b3c2d1e4
+     * @param value
+     */
     static void secondCompression (String value)
     {
+        /*
+
+         */
 
     }
 }
