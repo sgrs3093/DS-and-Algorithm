@@ -46,20 +46,42 @@ public class StringCompression
                 ans += String.valueOf(presentChar);
             }
         }
-        System.out.println(ans);
+        System.out.println("First comparison , exp =>  aabbccdd will be abcd, output is : { " + ans
+                                           + "}");
 
     }
 
     /**
      * Input : aaabbbccdeeee
      * Output : a3b3c2d1e4
+     *
      * @param value
      */
     static void secondCompression (String value)
     {
         /*
-
+            Approach :
+            suppose we got the input equal to : aaabbbccdd
+            then wil start going through the loop and will take the answer variable and will add the first character of the input
+            i.e ans = a, and count = 1;
+            and will check the current char to previous character if they are same then we will increase the count
          */
+        String ans = String.valueOf(value.charAt(0));
+        int count = 1;
+        for (int i = 1; i < value.length(); i++) {
+            char curr = value.charAt(i);
+            char prev = value.charAt(i-1);
 
+            if (curr == prev) {
+                count += 1;
+            }
+            else {
+                ans += count + String.valueOf(curr);
+                count = 1;
+            }
+        }
+        ans += count;
+        System.out.println("Second comparison , exp =>  aaabbbccdd will be a3b3c2d2, output is : { "
+                                           + ans + "}");
     }
 }
