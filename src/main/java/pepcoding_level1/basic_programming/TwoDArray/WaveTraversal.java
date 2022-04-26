@@ -36,7 +36,6 @@ public class WaveTraversal
                     System.out.println(arr[i][j]);
                 }
             }
-
         }
 
     }
