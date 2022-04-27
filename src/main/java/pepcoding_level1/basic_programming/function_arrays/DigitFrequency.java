@@ -25,7 +25,7 @@ public class DigitFrequency
         int frqDigit = 0;
         while (n > 0) {
             int dig = n % 10;//Extract digit
-            if (dig == d) {//check if the the digit and matching digit is same then increase the count
+            if (dig == d) {//check if the digit and matching digit is same then increase the count
                 frqDigit++;
             }
             //number chota kar do
@@ -85,6 +85,5 @@ public class DigitFrequency
 
         System.out.println("Total Digit frequency of the given digit is : " + digitFrequency);
     }
-
 
 }
