@@ -64,6 +64,8 @@ public class StringIntro
     here s is adding "a" in hello
     then first hello will be created then at next place hello will be copied first then "a" will be added
     hello will be new instance address will be created annd s will point to new instance
+
+    Because of above issue we will be using String Builder for better performance
      */
     public static void main (String[] args)
     {
