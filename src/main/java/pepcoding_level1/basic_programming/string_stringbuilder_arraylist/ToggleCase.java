@@ -13,6 +13,13 @@ public class ToggleCase
 
     }
 
+    /**
+     *
+     * ASCII value of uppercase alphabets – 65 to 90. ASCII value of lowercase alphabets – 97 to 122.
+     *
+     * @param word
+     * @return
+     */
     static StringBuilder convertCharacter (String word)
     {
         StringBuilder sb = new StringBuilder(word);
@@ -22,6 +29,8 @@ public class ToggleCase
 
             //if character is small then we need to convert to caps
             if (ch >= 'a' && ch <= 'z') {
+                //65 + 98(b) - 97 =  65+1 = 66 ==> B
+                //so here small 'b' converted to Caps 'B'
                 char upperCase = (char)('A' + ch - 'a');
                 sb.setCharAt(i,
                              upperCase);
