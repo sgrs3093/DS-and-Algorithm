@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * String Introduction
+ *
+ * Link : https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/string_interning_immutability/topic
  */
 public class StringIntro
 {
