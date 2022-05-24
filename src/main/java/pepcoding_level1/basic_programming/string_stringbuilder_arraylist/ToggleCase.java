@@ -11,7 +11,7 @@ public class ToggleCase
     public static void main (String[] args)
     {
         StringBuilder output = convertCharacter("SaGaR");
-        System.out.println(output);
+        System.out.println(output);//SaGaR  == > sAgAr
 
     }
 
@@ -23,6 +23,7 @@ public class ToggleCase
      */
     static StringBuilder convertCharacter (String word)
     {
+        //converting String to StringBuilder to use predefined method in better way
         StringBuilder sb = new StringBuilder(word);
 
         for (int i = 0; i < sb.length(); i++) {
