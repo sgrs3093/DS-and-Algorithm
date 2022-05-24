@@ -1,6 +1,8 @@
 package pepcoding_level1.basic_programming.string_stringbuilder_arraylist;
 
 /**
+ * https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/toggle-case-official/ojquestion
+ * <p>
  * I/P : SaGaR
  * O/P : sAgAr
  */
@@ -14,7 +16,6 @@ public class ToggleCase
     }
 
     /**
-     *
      * ASCII value of uppercase alphabets – 65 to 90. ASCII value of lowercase alphabets – 97 to 122.
      *
      * @param word
