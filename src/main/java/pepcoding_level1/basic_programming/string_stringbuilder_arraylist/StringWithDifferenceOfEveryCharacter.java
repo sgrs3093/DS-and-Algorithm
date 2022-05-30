@@ -11,5 +11,36 @@ public class StringWithDifferenceOfEveryCharacter
     {
         Scanner scn = new Scanner(System.in);
         String word = scn.next();
+        ;
+        System.out.println(getDifferenceOfCharacter(word));
+    }
+
+    /**
+     * For "abecd", the answer should be "a1b3e-2c1d", as
+     * 'b'-'a' = 1
+     * 'e'-'b' = 3
+     * 'c'-'e' = -2
+     * 'd'-'c' = 1
+     */
+    static StringBuilder getDifferenceOfCharacter (String word)
+    {
+        char prev = word.charAt(0);
+        //creating String builder as it is better for the performance
+        StringBuilder sb = new StringBuilder();
+        sb.append(word.charAt(0));
+
+        for (int i = 1; i < word.length(); i++) {
+
+            char prevChar = word.charAt(i - 1);
+            char currChar = word.charAt(i);
+
+            int diff = currChar - prevChar;
+            if (currChar != prevChar) {
+                sb.append(diff).append(currChar);
+            }
+        }
+
+        return sb;
+
     }
 }

@@ -20,7 +20,7 @@ public class StringIntro
      */
     /*
     <p></p>
-    Interning : what is interning in String
+    Interning : what is interning in String class
     String s1="hello";
     String s2="hello";
     String s3=new String("hello");
@@ -33,39 +33,39 @@ public class StringIntro
     == dont use for content checking it will check the address
     what is Immutability : we can't change the instance ,
     reference we can change but instance we cant change
-    i.e char c = string.charAt(0)//here we will get the char of the staring
-    but we cant change the char in string i.e string.charAt(0) = 'd'// we can assign d at 0th place
+    i.e char c = string.charAt(0)//here we will get the char of the staring index,
+    but we can't change the char in string i.e string.setCharAt(0) = 'd'// we can assign d at 0th place
     Reference is Mutable but Instance is not
-    Why they have made the immutability , to not give suprise to developer
-    i am explaining here , interning is allowed in String i.e s1 and s2 is pointing to same instanse
+    Why they have made the immutability , to not give surprise to developer
+    I am explaining here , interning is allowed in String i.e s1 and s2 is pointing to same instance
     to save the space in memory for same content
-    and immutability they have given to not change the instace, why, because suppose s1 change the content of hello to helloji
-    the s2 will automatically chage with surprise !!
+    and immutability they have given to not change the instance, why, because suppose s1 change the content of hello to helloji
+    the s2 will automatically change with surprise to developer !!
     so they have made the String as immutability.
 
     what is impact of Immutability :
     --------------
-    Because of String Immutability String performance got question , performance got slow
+    Because of String Immutability String performance got question , performance got slow .
 
    We will see one example of that
 
    String s= "";//blank String
-   for(int i=0;i<100;i++){//by looking this time complexity is look like O(n) but its not O(n) its O(n2) nn square
+   for(int i=0;i<100;i++){//by looking this time complexity is look like O(n) but its not O(n) its O(n2) n square
    s+=i;
    }
-    IN Loop every time we are adding the i'th value
-    S= s+0;//0
-    s= s+1//01
-    s= s+2//03 so forth and so on
-    so every time in memory for every concatannation new string instance will be created like , 0 , 01, 02 , 03 so on
-    and s will be pointing every time to new concatnated string insatce with new address and existing one will collected by garbage
+    In Loop every time we are adding the i'th value
+    S= s+0;//"0"
+    s= s+1//"01"
+    s= s+2//"03" so forth and so on
+    so every time in memory for every concatenation new string instance will be created like with, 0 , 01, 02 , 03 so on
+    and s will be pointing every time to new concatenated string instance with new address and existing one will collect by garbage
     collector
-    every time at ew spot new string will created by copying earlier string
+    every time at new spot new string will create by copying earlier string
     s="hello"
     s+='a';
     here s is adding "a" in hello
     then first hello will be created then at next place hello will be copied first then "a" will be added
-    hello will be new instance address will be created annd s will point to new instance
+    hello will be new instance address will be created and s will point to new instance
 
     Because of above issue we will be using String Builder for better performance
      */
