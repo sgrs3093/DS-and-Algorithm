@@ -46,7 +46,7 @@ public class StringCompression
                 ans += String.valueOf(presentChar);
             }
         }
-        System.out.println("First comparison , exp =>  aabbccdd will be abcd, output is : { " + ans
+        System.out.println("First comparison , exp =>  'aabbccdd' will be 'abcd', output is : { " + ans
                                            + "}");
 
     }
