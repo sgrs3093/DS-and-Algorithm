@@ -30,7 +30,7 @@ public class AnyBaseAddition
      * Here in this problem we are getting two number and their base
      * so here we need to add both number in their base
      *
-     * step to do so :
+     * step to take so :
      * 1) how are we adding the normal number
      * we start adding the numbers from right side by taking one number from both given number
      * exp :

@@ -39,7 +39,7 @@ public class DecimalToAnyBase
         we got the number and also base number to convert in which
         so we know the rule that base number will divide the number
         until number become 0
-        then each reminder will be will added from right side
+        then each reminder will add from right side
         ex-
         number= 634
         base = 8

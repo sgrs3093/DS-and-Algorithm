@@ -18,7 +18,9 @@ public class CountDigit
 
         while (n != 0) {
             //number to chota karte hai ..i.e 123/10 will become 12 then =>1 =>0 like that
-            // 123 ko 10 se devide karne pe quotient 12 aayega and 3 reminder aayega
+            /*
+               123 ko 10 se devide karne pe quotient 12 aayega and 3 reminder aayega,
+             */
             n = n / 10;
             digit++;
         }
