@@ -45,7 +45,7 @@ public class BinarySearch
         int high = arr.length - 1;
 
         while (low <= high) {
-            //if low is equal or less than high
+            //while low is equal or less than high
             //need to find mid
             int mid = low + high / 2;
 
@@ -54,6 +54,7 @@ public class BinarySearch
             if (d < arr[mid]) {
                 high = mid - 1;
             }
+            /* if finding data is grater than mid then we need to discard the all the elements after mid-1 */
             else if (d > arr[mid]) {
                 low = mid + 1;
             }

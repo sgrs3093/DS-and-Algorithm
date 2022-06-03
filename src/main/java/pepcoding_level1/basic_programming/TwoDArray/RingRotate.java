@@ -69,7 +69,7 @@ public class RingRotate
         int minc = shell - 1;
         int maxr = arr.length - shell;
         int maxc = arr[0].length - shell;
-        //int size = lw + bw + rw +tw -4; we are subtracting 4 beacasue each corner will be coming 2 times , so each corner number will become
+        //int size = lw + bw + rw +tw -4; we are subtracting 4 because each corner will be coming 2 times , so each corner number will become
         //duplicate , then we need to remove 1 duplicate number from each corner , total 4 element we need to remove from the one d array size.
         /*
         left wall = minr to max row
