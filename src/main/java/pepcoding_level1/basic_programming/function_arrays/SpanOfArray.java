@@ -28,7 +28,7 @@ import java.util.Scanner;
  * Sample Output
  * 36
  * <p>
- * Here we will get the number and we need to find max and min of then
+ * Here we will get the number, and we need to find max and min of then
  * then after finding min and max we need to find the difference between them
  * so in above input max is 40 and min is 6
  * Max=40

@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class StringIntro
 {
     /*
-    Deeclarationn
+    Declaration
     memory
     i/p
     o/p

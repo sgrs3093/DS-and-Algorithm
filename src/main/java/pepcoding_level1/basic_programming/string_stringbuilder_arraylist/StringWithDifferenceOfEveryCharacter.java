@@ -11,7 +11,6 @@ public class StringWithDifferenceOfEveryCharacter
     {
         Scanner scn = new Scanner(System.in);
         String word = scn.next();
-        ;
         System.out.println(getDifferenceOfCharacter(word));
     }
 
