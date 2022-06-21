@@ -31,8 +31,8 @@ public class IsPrime
 
     /**
      * for any number factor we need to check up to root of the N , and on that if any number will get divided
-     * then we need  not to check further , we can stop there and say factor has been happened and it is not prime
-     * number
+     * then we need not check further , we can stop there and say factor has been happened, and it is not prime
+     * number.
      *
      * @param n
      */

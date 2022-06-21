@@ -94,7 +94,7 @@ public class AnyBaseAddition
         int result = 0;
         int multiplier = 1;
         int carry = 0;
-
+        // 8+1
         while (n1 > 0 || n2 > 0 || carry > 0) {
 
             int dig1 = n1 % 10;
