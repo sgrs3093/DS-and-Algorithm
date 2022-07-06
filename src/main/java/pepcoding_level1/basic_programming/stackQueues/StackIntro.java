@@ -40,8 +40,9 @@ public class StackIntro {
         st.pop();
         System.out.println(st + "  " + st.peek() + "   " + st.size());
         st.pop();
-        //this line give exception as Stack is empty now , st.peek() will give the Exception
-        System.out.println(st + "  " + st.peek() + "   " + st.size());
+        //this line give exception as Stack is empty now ,
+        // st.peek() will give the Exception Empty stackException
+        System.out.println(st + "  "  + st.size());
 
     }
 }
