@@ -5,18 +5,49 @@ import java.util.Stack;
 
 /**
  * https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/duplicate_brackets/topic
+ * <p>
+ * e.g.'
+ * ((a + b) + (c + d)) -> false
+ * (a + b) + ((c + d)) -> true
  */
-public class DuplicateBracket {
+public class DuplicateBracket
+{
 
-    public static void main(String[] args) {
+    public static void main (String[] args)
+    {
 
         Scanner sc = new Scanner(System.in);
         String word = sc.nextLine();
+        boolean flag = findDuplicate(word);
+        System.out.println("Found duplicate in given %s word is %s" + flag);
 
+    }
+
+    static boolean findDuplicate (String word)
+    {
+        //will form a Stack to push and pop the element
         Stack<Character> st = new Stack<>();
         for (int i = 0; i < word.length(); i++) {
 
-        }
+            char currentChar = word.charAt(i);
 
+            if (currentChar == ')') {
+
+                if (st.peek() == '(') {
+                    return true;
+                }
+                else {
+
+                    while (st.peek() != '(') {
+                        st.pop();
+                    }
+                    st.pop();
+                }
+            }
+            else {
+                st.push(currentChar);
+            }
+        }
+        return false;
     }
 }
