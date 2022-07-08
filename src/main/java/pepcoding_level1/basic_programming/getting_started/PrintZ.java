@@ -7,15 +7,11 @@ public class PrintZ
 {
 
     byte b = 127;
-
     public char ch = 97;
-
     public static void main (String[] args)
     {
         PrintZ printZ = new PrintZ();
-
         printZ.printZ();
-
     }
 
     /**
