@@ -21,6 +21,8 @@ public class DuplicateBracket
         boolean flag = findDuplicate(word);
         System.out.println("Found duplicate in given %s word is %s" + flag);
 
+        loop();
+
     }
 
     static boolean findDuplicate (String word)
@@ -49,5 +51,19 @@ public class DuplicateBracket
             }
         }
         return false;
+    }
+
+   static void loop ()
+    {
+        for (int i = 1, j = 1; i <= 10 && j <= 10; i++) {
+            System.out.println(i);
+        }
+
+        int i = 1;
+        do {
+            System.out.println("do while loop demo " + i);
+            i++;
+        }
+        while (i <= 10);
     }
 }
