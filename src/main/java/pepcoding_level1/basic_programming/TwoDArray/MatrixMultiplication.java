@@ -76,7 +76,7 @@ public class MatrixMultiplication
           c11 c12 c13 c14
           c21 c22 c23 c24
           here c11= a11.b11 + a12.b21 + a13.b31
-               c23 =a21.b13 + a22.b23 + a23.b33 ( a rows are same and column get change and b rows same as a's column
+               c23 = a21.b13 + a22.b23 + a23.b33 ( a rows are same and column get change and b rows same as a's column
           in above product of c11 : 1st row and first column
           rows are same , but column getting change
           a12.b21 here 1st column is same as 2nd matrix row
