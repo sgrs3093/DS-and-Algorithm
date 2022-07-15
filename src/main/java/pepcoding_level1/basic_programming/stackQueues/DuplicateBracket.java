@@ -21,12 +21,14 @@ public class DuplicateBracket
         boolean flag = findDuplicate(word);
         System.out.println("Found duplicate in given %s word is %s" + flag);
 
-        loop();
+       // loop();
 
     }
 
     static boolean findDuplicate (String word)
     {
+        //((a + b) + (c + d)) -> false
+        //(a + b) + ((c + d)) -> true
         //will form a Stack to push and pop the element
         Stack<Character> st = new Stack<>();
         for (int i = 0; i < word.length(); i++) {
@@ -39,7 +41,6 @@ public class DuplicateBracket
                     return true;
                 }
                 else {
-
                     while (st.peek() != '(') {
                         st.pop();
                     }
