@@ -40,6 +40,25 @@ public class Main
             size++;
 
         }
+
+        public void display ()
+        {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.println();
+        }
+
+        /**
+         * @return
+         */
+        public int size ()
+        {
+
+            return size;
+        }
     }
 
     public static void testList (LinkedList list)
@@ -73,6 +92,11 @@ public class Main
             }
             str = br.readLine();
         }
+        System.out.println("Printing the Display()");
+        list.display();
+        System.out.println("Printing the size()" + list.size());
+
+        System.out.println("Testing the list ");
         testList(list);
 
     }
