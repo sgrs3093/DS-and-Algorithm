@@ -4,19 +4,36 @@ public class Student1
 {
     int id;
     String name;
+    float salary;
 
-    void insertRecord (int rolno,
-                       String name1)
+    void insert (int i,
+                 String n,
+                 float s)
     {
+        id = i;
+        name = n;
+        salary = s;
 
-        id = rolno;
-        name = name1;
     }
 
-    void displayStudentInformation (Student1 s)
+    void display ()
     {
-        System.out.println(s.id);
-        System.out.println(s.name);
+        System.out.println(id + "---" + name + "----" + salary);
+    }
+
+    void insertRecord (int i,
+                       String n)
+    {
+
+        id = i;
+        name = n;
+    }
+
+    void displayStudentInformation ()
+    {
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(salary);
     }
 
 }
