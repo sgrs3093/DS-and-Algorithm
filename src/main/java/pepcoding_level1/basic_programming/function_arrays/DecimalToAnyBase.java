@@ -3,13 +3,16 @@ package pepcoding_level1.basic_programming.function_arrays;
 import java.util.Scanner;
 
 /**
+ *
  * DecimalTOAnyBase
- *Problem : https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/decimal_to_any_base/topic
+ * Problem : https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/decimal_to_any_base/topic
  * this class is mainly for number system
  * converting decimal to octal
  * converting decimal to binary
  * Decimal to any base conversion
+ *
  */
+
 public class DecimalToAnyBase
 {
 
@@ -64,11 +67,11 @@ public class DecimalToAnyBase
             int dig = num % base;
             //we got the first digit that number will go to right most corner
             num = num / base;//number ko chota kar dege
-            reverse += dig * power;// REVERSE ME ADD KAR DENGE (WILL BE ADDING THE NUMBER IN REVERSE)
+            reverse += dig
+                            * power;// REVERSE ME ADD KAR DENGE (WILL BE ADDING THE NUMBER IN REVERSE)
             //now next reminder will come to left , so will multiply with power with 10
             power = power * 10;
         }
         System.out.println("Decimal number " + n + " to base final output is : " + reverse);
-
     }
 }

@@ -26,11 +26,12 @@ public class AnyBaseToDecimal
 
     public static void main (String[] args)
     {
-        anybasetoDecimal();
+        anyBaseToDecimal();
     }
 
-    private static void anybasetoDecimal ()
+    private static void anyBaseToDecimal ()
     {
+
         System.out.println("Enter the number you want to convert");
         int num = getInput();
         System.out.println("Enter the base in which you want to convert");
@@ -57,7 +58,7 @@ public class AnyBaseToDecimal
        so for 1172 base of 8 ka decimal is 634
         Now will focus on code
          */
-        int pow  = 1;
+        int pow = 1;
         int rev = 0;
         //base is 8 here now for the given number
         while (num > 0) {
@@ -66,11 +67,13 @@ public class AnyBaseToDecimal
 
             num = num / 10;//1172 ==> 117, 11 ,1 , 0
 
-            rev += dig * pow;// 2* 1(8 of 0 is 1 ) = 2 *1 =2+, 7 * 8=56+, 1 * 64=64+, 1 * 512 = 512 => 2+56+64+512= 634
+            rev += dig
+                            * pow;// 2* 1(8 of 0 is 1 ) = 2 *1 =2+, 7 * 8=56+, 1 * 64=64+, 1 * 512 = 512 => 2+56+64+512= 634
             pow = pow * base;//1 * 8 = 8 , 8 * 8 = 64  , 64 * 8 = 512
 
         }
-       // System.out.println("Given number is : "+ num + "and base is : "+base);
-        System.out.println("Any base to Decimal of given number is :"+rev);
+        // System.out.println("Given number is : "+ num + "and base is : "+base);
+        System.out.println("Any base to Decimal of given number is :" + rev);
+
     }
 }

@@ -1,6 +1,5 @@
-package pepcoding_level1.basic_programming.sorting;
+package pepcoding_level1.basic_programming.sortingsearching;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.TreeSet;
